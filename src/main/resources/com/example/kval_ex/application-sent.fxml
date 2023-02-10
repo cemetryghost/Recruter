@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kval_ex.ApplicationSent">
+   <children>
+      <Label layoutX="546.0" layoutY="164.0" prefHeight="38.0" prefWidth="229.0" text="Поздравляем! " textFill="#4778c0" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="29.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="495.0" prefWidth="433.0" style="-fx-background-color: #4682B4;">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="351.0" layoutX="41.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/0ab93365afc1d6a63b08a68735755244.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="315.0" prefHeight="73.0" prefWidth="298.0" text="Software development is our passion" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="exitApplicationButton" layoutX="552.0" layoutY="390.0" mnemonicParsing="false" onAction="#ExitApplicationButton" prefHeight="73.0" prefWidth="217.0" style="-fx-background-color: #B0C4DE;" text="Выход из программы">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="586.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/ok_480px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="502.0" layoutY="207.0" prefHeight="82.0" prefWidth="317.0" text="Ваша заявка успешно отправлена! " textAlignment="CENTER" textFill="#4778c0" wrapText="true">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="289.0" prefHeight="82.0" prefWidth="351.0" text="Мы свяжемся с вами в ближайшее время!" textAlignment="CENTER" textFill="#4778c0" wrapText="true">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="52.0" layoutX="502.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/exit_sign480px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

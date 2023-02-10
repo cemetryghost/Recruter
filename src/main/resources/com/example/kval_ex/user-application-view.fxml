@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="859.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kval_ex.UserApplicationView">
+   <children>
+      <Pane prefHeight="95.0" prefWidth="638.0" style="-fx-background-color: #4682B4;">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="201.0" layoutX="222.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/0ab93365afc1d6a63b08a68735755244.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="161.0" layoutY="124.0" prefHeight="32.0" prefWidth="359.0" text="Заявка на трудоустройство" textFill="#4778c0">
+         <font>
+            <Font name="Tahoma Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="217.0" text="ФИО" textFill="#4778c0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dateField" layoutX="32.0" layoutY="324.0" prefHeight="37.0" prefWidth="269.0" />
+      <Label layoutX="32.0" layoutY="296.0" text="Дата рождения" textFill="#4778c0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberField" layoutX="32.0" layoutY="403.0" prefHeight="37.0" prefWidth="269.0" />
+      <Label layoutX="32.0" layoutY="375.0" text="Номер телефона" textFill="#4778c0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="salaryField" layoutX="32.0" layoutY="480.0" prefHeight="37.0" prefWidth="269.0" />
+      <Label layoutX="32.0" layoutY="452.0" text="Ожидаемая зарплата" textFill="#4778c0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="specialityField" layoutX="32.0" layoutY="589.0" prefHeight="37.0" prefWidth="269.0" />
+      <Label layoutX="32.0" layoutY="530.0" prefHeight="59.0" prefWidth="173.0" text="Специальность по образованию" textFill="#4778c0" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="640.0" prefHeight="37.0" prefWidth="269.0" text="Профессиональные навыки" textFill="#4778c0" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FIOfield" layoutX="32.0" layoutY="241.0" prefHeight="37.0" prefWidth="269.0" />
+      <ComboBox fx:id="experienceList" layoutX="341.0" layoutY="241.0" prefHeight="37.0" prefWidth="269.0" promptText="Выберите из списка" style="-fx-background-color: #87CEEB;" />
+      <Label layoutX="341.0" layoutY="181.0" prefHeight="59.0" prefWidth="269.0" text="Опыт работы на желаемую вакансию" textFill="#4778c0" wrapText="true">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="vacancyList" layoutX="341.0" layoutY="324.0" prefHeight="37.0" prefWidth="269.0" promptText="Выберите из списка" style="-fx-background-color: #87CEEB;" />
+      <Label layoutX="341.0" layoutY="298.0" text="Вакансии" textFill="#4778c0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cityList" layoutX="341.0" layoutY="401.0" prefHeight="37.0" prefWidth="269.0" promptText="Выберите из списка" style="-fx-background-color: #87CEEB;" />
+      <Label layoutX="341.0" layoutY="375.0" text="Город проживания" textFill="#4778c0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="educationList" layoutX="341.0" layoutY="478.0" prefHeight="37.0" prefWidth="269.0" promptText="Выберите из списка" style="-fx-background-color: #87CEEB;" />
+      <Label layoutX="341.0" layoutY="452.0" text="Уровень образования" textFill="#4778c0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="37.0" fitWidth="41.0" layoutX="119.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/about_500px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="382.0" layoutY="552.0" prefHeight="176.0" prefWidth="236.0" text="Перед отправкой - проверьте форму заявки на корректность! Убедитесь в отсутствии пустых полей!" textFill="#4778c0" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="341.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/info_500px.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="sendButton" layoutX="374.0" layoutY="750.0" mnemonicParsing="false" onAction="#SendButton" prefHeight="86.0" prefWidth="236.0" style="-fx-background-color: #B0C4DE;" text="Отправить заявку">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="37.0" fitWidth="28.0" layoutX="341.0" layoutY="779.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/send_480px.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="skillsArea" layoutX="32.0" layoutY="677.0" prefHeight="161.0" prefWidth="269.0" wrapText="true" />
+   </children>
+</AnchorPane>

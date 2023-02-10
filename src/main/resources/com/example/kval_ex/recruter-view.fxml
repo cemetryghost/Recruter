@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="1013.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kval_ex.RecruterView">
+   <children>
+      <Pane prefHeight="543.0" prefWidth="316.0" style="-fx-background-color: #4682B4;">
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="258.0" layoutX="30.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/0ab93365afc1d6a63b08a68735755244.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="50.0" layoutX="135.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/male_user_512px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="115.0" layoutY="193.0" text="Recruter" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="applicationButton" defaultButton="true" layoutX="70.0" layoutY="256.0" mnemonicParsing="false" onAction="#ApplicationButton" prefHeight="59.0" prefWidth="217.0" style="-fx-background-color: #B0C4DE;" text="Заявки">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="vacancyButton" layoutX="70.0" layoutY="339.0" mnemonicParsing="false" onAction="#VacancyButton" prefHeight="59.0" prefWidth="217.0" style="-fx-background-color: #B0C4DE;" text="Вакансии">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="70.0" layoutY="459.0" mnemonicParsing="false" onAction="#ExitButton" prefHeight="59.0" prefWidth="217.0" style="-fx-background-color: #B0C4DE;" text="Выход из программы">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="55.0" layoutX="20.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/exit_sign_480px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="55.0" layoutX="20.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/trello_500px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="55.0" layoutX="20.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/catalog_512px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="611.0" layoutY="25.0" text="Заявки" textFill="#4778c0">
+         <font>
+            <Font name="Tahoma Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="changeStatusButton" defaultButton="true" layoutX="877.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#ChangeStatusButton" prefHeight="69.0" prefWidth="119.0" style="-fx-background-color: #B0C4DE;" text="Изменить статус " textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteApplicationButton" defaultButton="true" layoutX="879.0" layoutY="458.0" mnemonicParsing="false" onAction="#DeleteApplicationButton" prefHeight="69.0" prefWidth="119.0" style="-fx-background-color: #B0C4DE;" text="Удалить заявку" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewingApplicationButton" defaultButton="true" layoutX="878.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#ViewingApplicationButton" prefHeight="69.0" prefWidth="119.0" style="-fx-background-color: #B0C4DE;" text="Просмотр заявки" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="statusList" layoutX="443.0" layoutY="83.0" prefHeight="37.0" prefWidth="547.0" promptText="Выберите статус заявки" style="-fx-background-color: #87CEEB;" />
+      <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="920.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/Delete_480px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="37.0" layoutX="921.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/view_208px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="918.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/change_500px.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="applicationTable" layoutX="331.0" layoutY="145.0" onMouseClicked="#getSelected" prefHeight="383.0" prefWidth="534.0" style="-fx-background-color: #B0C4DE;">
+        <columns>
+          <TableColumn fx:id="col_name" prefWidth="200.66659545898438" text="ФИО" />
+            <TableColumn fx:id="col_number" prefWidth="111.99993896484375" text="Номер телефна" />
+            <TableColumn fx:id="col_vacancy" prefWidth="139.33331298828125" text="Вакансия" />
+            <TableColumn fx:id="col_status" prefWidth="80.66668701171875" text="Статус" />
+        </columns>
+      </TableView>
+      <Label layoutX="350.0" layoutY="86.0" prefHeight="32.0" prefWidth="87.0" text="Статус" textFill="#4778c0">
+         <font>
+            <Font name="Tahoma" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
