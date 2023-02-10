@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="src/main/resources/image/0ab93365afc1d6a63b08a68735755244.png" alt="Logo" width="500" height="200">
+    <img src="src/main/resources/image/0ab93365afc1d6a63b08a68735755244.png" alt="Logo" width="500" height="185">
   <h3 align="center">Калькулятор автострахования</h3>
   <p align="center">
     Расчет стоимости страхования ОСАГО
