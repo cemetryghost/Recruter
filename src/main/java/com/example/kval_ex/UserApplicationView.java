@@ -15,10 +15,10 @@ import java.io.*;
 
 public class UserApplicationView{
 
-    public ObservableList<String> city = pathToList("Recruter-master\\files\\city.txt");
-    public ObservableList<String> education = pathToList("Recruter-master\\files\\education.txt");
-    public ObservableList<String> experience = pathToList("Recruter-master\\files\\experience.txt");
-    public ObservableList<String> vacancy = pathToList("Recruter-master\\files\\vacancy.txt");
+    public ObservableList<String> city = pathToList("files\\city.txt");
+    public ObservableList<String> education = pathToList("files\\education.txt");
+    public ObservableList<String> experience = pathToList("files\\experience.txt");
+    public ObservableList<String> vacancy = pathToList("files\\vacancy.txt");
 
     @FXML
     void initialize() {
@@ -88,7 +88,7 @@ public class UserApplicationView{
                     experienceList.getSelectionModel().getSelectedItem(),
                     vacancyList.getSelectionModel().getSelectedItem()
                     );
-            try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Recruter-master\\files\\application.txt", true))){
+            try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("files\\application.txt", true))){
                 bufferedWriter.write(text + "\r\n");
                 bufferedWriter.flush();
             }

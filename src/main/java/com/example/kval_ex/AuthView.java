@@ -17,7 +17,7 @@ public class AuthView{
     @FXML private TextField loginField;
     @FXML private PasswordField passwordField;
 
-    String login = "recruter", password = "1";
+    String login = "recruter", password = "159753";
 
     // Метод проверки логина и пароля
 

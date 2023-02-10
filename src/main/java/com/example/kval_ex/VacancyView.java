@@ -35,10 +35,10 @@ public class VacancyView implements Initializable{
 
     @FXML
     void AddVacancyButton() {
-        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Recruter-master\\files\\vacancy.txt", true))){
+        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("files\\vacancy.txt", true))){
             String text = "";
             String line;
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("Recruter-master\\files\\vacancy.txt"));
+            BufferedReader bufferedReader = new BufferedReader(new FileReader("files\\vacancy.txt"));
 
             while ((line = bufferedReader.readLine()) != null){
                 text += line;
@@ -71,7 +71,7 @@ public class VacancyView implements Initializable{
             String temp = vacancyField.getText();
             int choose = vacancyTable.getSelectionModel().getSelectedIndex();
             int number = 0;
-            try(BufferedReader bufferedReader = new BufferedReader(new FileReader("Recruter-master\\files\\vacancy.txt"))){
+            try(BufferedReader bufferedReader = new BufferedReader(new FileReader("files\\vacancy.txt"))){
                 String text = "";
                 String line;
 
@@ -85,7 +85,7 @@ public class VacancyView implements Initializable{
                         number++;
                     }
                 }
-                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Recruter-master\\files\\vacancy.txt"));
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("files\\vacancy.txt"));
                 bufferedWriter.write(text);
                 bufferedWriter.flush();
                 bufferedWriter.close();
@@ -109,7 +109,7 @@ public class VacancyView implements Initializable{
         if(vacancyTable.getSelectionModel().getSelectedItem() != null){
             int choose = vacancyTable.getSelectionModel().getSelectedIndex();
             int number = 0;
-            try(BufferedReader bufferedReader = new BufferedReader(new FileReader("Recruter-master\\files\\vacancy.txt"))){
+            try(BufferedReader bufferedReader = new BufferedReader(new FileReader("files\\vacancy.txt"))){
                 String text = "";
                 String line;
 
@@ -122,7 +122,7 @@ public class VacancyView implements Initializable{
                         number++;
                     }
                 }
-                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Recruter-master\\files\\vacancy.txt"));
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("files\\vacancy.txt"));
                 bufferedWriter.write(text);
                 bufferedWriter.flush();
                 bufferedWriter.close();
@@ -181,7 +181,7 @@ public class VacancyView implements Initializable{
     public void Update(){
         vacancyTable.getItems().clear();
 
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("Recruter-master\\files\\vacancy.txt"))){
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("files\\vacancy.txt"))){
             String line;
 
             while ((line = bufferedReader.readLine()) != null){

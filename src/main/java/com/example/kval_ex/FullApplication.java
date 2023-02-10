@@ -32,7 +32,7 @@ public class FullApplication implements Initializable {
 
         String text = "";
         String line;
-        try(BufferedReader bufferedReader = new BufferedReader(new FileReader("Recruter-master\\files\\application.txt"))){
+        try(BufferedReader bufferedReader = new BufferedReader(new FileReader("files\\application.txt"))){
             while((line = bufferedReader.readLine()) != null){
                 text += line + "\r\n";
             }

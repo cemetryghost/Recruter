@@ -22,7 +22,7 @@ import java.util.ResourceBundle;
 
 public class RecruterView implements Initializable {
 
-    public ObservableList<String> status = UserApplicationView.pathToList("Recruter-master\\files\\status.txt");
+    public ObservableList<String> status = UserApplicationView.pathToList("files\\status.txt");
     @FXML private ComboBox<String> statusList;
     @FXML private Button applicationButton, vacancyButton, changeStatusButton, deleteApplicationButton, exitButton, viewingApplicationButton;
     @FXML private TableColumn<Ticket, String> col_name, col_number, col_status, col_vacancy;
@@ -74,7 +74,7 @@ public class RecruterView implements Initializable {
 
         // Читаем пока не конец строки из файла выбранного элемента
 
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("Recruter-master\\files\\application.txt"));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("files\\application.txt"));
         if(getSelected() != -1){
             while((line = bufferedReader.readLine()) != null){
                 text += line + "\r\n";
@@ -89,7 +89,7 @@ public class RecruterView implements Initializable {
 
             text = text.replace(array[getSelected()], change);
 
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Recruter-master\\files\\application.txt"));
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("files\\application.txt"));
             bufferedWriter.write(text);
             bufferedWriter.flush();
             Update();
@@ -107,7 +107,7 @@ public class RecruterView implements Initializable {
         String text = "";
         String line;
         if(getSelected() != -1){
-            try(BufferedReader bufferedReader = new BufferedReader(new FileReader("Recruter-master\\files\\application.txt"))){
+            try(BufferedReader bufferedReader = new BufferedReader(new FileReader("files\\application.txt"))){
                 while((line = bufferedReader.readLine()) != null){
                     text += line + "\r\n";
                 }
@@ -122,7 +122,7 @@ public class RecruterView implements Initializable {
                     }
                 }
 
-                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Recruter-master\\files\\application.txt"));
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("files\\application.txt"));
                 bufferedWriter.write(text);
                 bufferedWriter.flush();
                 Update();
@@ -187,7 +187,7 @@ public class RecruterView implements Initializable {
 
     public void Update(){
         applicationTable.getItems().clear();
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("Recruter-master\\files\\application.txt"))){
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("files\\application.txt"))){
             String line;
             statusList.getItems().clear();
             statusList.getItems().addAll(status);
