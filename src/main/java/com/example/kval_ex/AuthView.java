@@ -13,11 +13,11 @@ import java.io.IOException;
 // Класс авторизации рекрутера
 public class AuthView{
 
-    @FXML private Button enterButton;
-    @FXML private TextField loginField;
-    @FXML private PasswordField passwordField;
+    @FXML Button enterButton;
+    @FXML TextField loginField;
+    @FXML PasswordField passwordField;
 
-    String login = "recruter", password = "159753";
+    private String login = "recruter", password = "159753";
 
     // Метод проверки логина и пароля
 
